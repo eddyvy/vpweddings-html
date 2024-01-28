@@ -1,0 +1,45 @@
+@import 'constants'
+
+.services
+  &_title
+    margin-top: 40px
+
+  &_layout
+    margin-top: 50px
+    display: flex
+    justify-content: center
+
+  &_wrapper
+    padding: 0 20px
+    margin-bottom: 40px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 40px
+    max-width: 350px
+
+  &_card
+    &_title
+      text-align: center
+      font-family: $second_font
+      font-size: 1.8rem
+      margin: 10px 0
+
+    &_body
+      text-align: center
+      font-size: 1.4rem
+
+  &_btn_container
+    display: flex
+    justify-content: center
+    margin: 20px 0 50px
+
+@media (min-width: $desktop)
+  .services
+    &_wrapper
+      flex-direction: row
+      gap: 80px
+      max-width: 1000px
+
+    &_card
+      max-width: 300px

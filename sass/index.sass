@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap')
 
 @font-face
   font-family: 'Aniyah'
-  src: url('/static/fonts/aniyah.otf')
-  font-weight: normal
-  font-style: normal
-
-@font-face
-  font-family: 'Bodoni Cyrillic'
-  src: url('/static/fonts/bodoni-cyrillic.ttf')
+  src: url('/static/fonts/aniyah.otf') format("opentype")
   font-weight: normal
   font-style: normal
 
@@ -25,7 +20,7 @@ html
 body
   background-color: $lcolor1
   color: $mcolor1
-  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+  font-family: $main_font
   font-size: 1.2rem
 
 h1
@@ -88,7 +83,7 @@ button, input[type="submit"], input[type="reset"]
 
   &:focus
     outline: none
-    border: 1px solid $lcolor1
+    border: 1px solid $mcolor1
 
   &:not(:disabled)
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px
@@ -108,3 +103,9 @@ button, input[type="submit"], input[type="reset"]
 .section
   min-height: 100vh
   min-height: 100svh
+
+  &_title
+    font-family: $title_font
+    font-size: 3.6rem
+    padding: 20px
+    text-align: center
