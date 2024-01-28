@@ -1,0 +1,27 @@
+@import 'constants'
+
+.locations
+  background-color: $mcolor1
+  color: $lcolor1
+
+  &_layout
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 40px
+    padding: 0 20px 50px 20px
+
+  & img
+    width: 95%
+    max-width: 450px
+
+  &_text p
+    margin: 20px 0
+    max-width: 450px
+
+@media (min-width: $desktop)
+  .locations
+    &_layout
+      flex-direction: row-reverse
+      justify-content: center
