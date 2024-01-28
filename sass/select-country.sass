@@ -1,0 +1,80 @@
+@import 'constants'
+
+.select-box
+  position: relative
+  display: inline-block
+  width: 100px
+  margin: 0 auto
+
+.select-box__current
+  position: relative
+  cursor: pointer
+  outline: none
+
+.select-box__current:focus + .select-box__list
+  opacity: 1
+  animation-name: none
+
+.select-box__current:focus + .select-box__list .select-box__option
+  cursor: pointer
+
+.select-box__current:focus .select-box__icon
+  transform: translateY(-50%) rotate(180deg)
+
+.select-box__icon
+  position: absolute
+  top: 50%
+  right: 15px
+  transform: translateY(-50%)
+  width: 20px
+  opacity: 0.8
+  transition: 0.2s ease
+
+.select-box__value
+  display: flex
+
+.select-box__input
+  display: none
+
+.select-box__input:checked + .select-box__input-text
+  display: block
+
+.select-box__input-text
+  display: none
+  width: 100%
+  margin: 0
+  padding: 15px
+  background-color: $mcolor1
+
+.select-box__list
+  position: absolute
+  width: 100%
+  padding: 0
+  list-style: none
+  opacity: 0
+  animation-name: HideList
+  animation-duration: 0.5s
+  animation-delay: 0.5s
+  animation-fill-mode: forwards
+  animation-timing-function: step-start
+  z-index: 11
+
+.select-box__option
+  display: block
+  padding: 15px
+  background-color: $mcolor1
+
+.select-box__option:hover,
+.select-box__option:focus
+  color: $mcolor1
+  background-color: $lcolor1
+
+.select-img
+  width: 30px
+
+@keyframes HideList
+  from
+    transform: scaleY(1)
+
+  to
+    transform: scaleY(0)

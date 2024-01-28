@@ -1,0 +1,44 @@
+@import 'constants'
+
+.menu_container
+  position: fixed
+  top: 0
+  width: 100%
+
+.menu
+  background-color: $mcolor1
+  color: $lcolor1
+  flex-direction: column
+  align-items: flex-end
+  padding: 20px 20px 50px 50px
+  border-bottom-left-radius: 30px
+  position: absolute
+  right: 0
+  display: none
+
+  &_show
+    display: flex
+
+  &_close
+    background-color: transparent
+
+  &_icon_btn
+    & img
+      height: 35px
+      width: 35px
+
+  &_links
+    padding-right: 20px
+
+    & a
+      font-family: $second_font
+      font-size: 2rem
+      display: block
+      margin: 15px 0
+
+    &_lang
+      margin: -5px -5px -5px -10px
+
+.section
+  min-height: 100vh
+  min-height: 100svh

@@ -1,0 +1,29 @@
+{
+  "liveSassCompile.settings.compileOnWatch": false,
+  "liveSassCompile.settings.watchOnLaunch": true,
+  "liveSassCompile.settings.useNewCompiler": true,
+  "liveSassCompile.settings.showOutputWindowOn": "Warning",
+  "liveSassCompile.settings.formats": [
+    // {
+    //   "format": "expanded",
+    //   "extensionName": ".css",
+    //   "savePath": null,
+    //   "savePathReplacementPairs": {
+    //     "/sass/": "/static/css/"
+    //   }
+    // },
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": null,
+      "savePathReplacementPairs": {
+        "/sass/": "/static/css/"
+      },
+      "generateMap": false
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**",
+    "/.vscode/**"
+  ]
+}
