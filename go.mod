@@ -1,5 +1,5 @@
-module github.com/eddyvy/inmovalls
+module github.com/eddyvy/vpweddings-html
 
 go 1.21.4
 
-require github.com/go-chi/chi/v5 v5.0.11 // indirect
+require github.com/go-chi/chi/v5 v5.0.11
