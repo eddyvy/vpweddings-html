@@ -1,6 +1,10 @@
 @import 'constants'
 
 .gallery
+  display: flex
+  justify-content: center
+  padding: 50px
+
   &_hero
     background-image: url(/static/img/gallery/gallery_title.jpg)
     background-repeat: no-repeat
@@ -21,9 +25,26 @@
       left: 50%
       transform: translate(-50%, -50%)
 
+  &_images
+    padding: 30px
+    display: grid
+    grid-template-columns: 1fr
+    max-width: 1200px
+    gap: 50px
+
+  &_img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center
+
 @media (min-width: $desktop)
   .gallery
     &_hero_text
       font-size: 3.5rem
       top: 40%
       left: 50%
+
+    &_images
+      width: 70vw
+      grid-template-columns: 1fr 1fr
