@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta name="description"
     content="...¡Wedding in Mallorca!..."> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
   <link rel="icon" type="image/png" href="/static/img/logo/logo.ico">
@@ -274,7 +275,51 @@
       </div>
     </section>
     <section id="testimonials" class="section">
-      <h2>testimonials</h2>
+      <h2 class="section_title">Testimonials</h2>
+      <div class="testimonials_carousel">
+        <div class="testimonials_carousel_wrapper">
+          <div id="carousel_card_1" class="testimonials_card testimonials_card_show">
+            <div class="testimonials_card_header">
+              <img class="testimonials_card_img" src="/static/img/testimonials/bride.jpg" alt="Testimonials 2">
+            </div>
+            <div class="testimonials_card_body">
+              <h4 class="testimonials_card_body_title">Una experiencia inolvidable</h4>
+              <p class="testimonials_card_body_text">
+                Nos casamos el 09/10/21, tuvimos la experiencia de ser una boda post-covid por lo que continuamente
+                estábamos haciendo cambios por las restricciones. Alicia tuvo toda la paciencia del mundo y preparó
+                nuestra boda con todo su cariño y buen gusto. Se encargó de toda la parte organizativa, nos ayudo a
+                buscar
+                restaurante, catering, fotógrafo y hasta el grupo de música indie que tanta ilusión le hacía a mi
+                marido.
+                El día de la boda estuvo muy pendiente de todo y de nuestra familia y amigos y nosotros pudimos
+                disfrutarlo al máximo. Sin duda recomiendo a otros novios su servicio como weeding planner.
+              </p>
+            </div>
+          </div>
+          <div id="carousel_card_2" class="testimonials_card testimonials_card_hide">
+            <div class="testimonials_card_header">
+              <img class="testimonials_card_img" src="/static/img/testimonials/hands.jpg" alt="Testimonials 1">
+            </div>
+            <div class="testimonials_card_body">
+              <h4 class="testimonials_card_body_title">Mi boda soñada</h4>
+              <p class="testimonials_card_body_text">
+                Mi marido y yo queríamos una boda de ensueño en Mallorca, ya que es donde nos conocimos. Gracias a
+                nuestra
+                wedding planner, Alicia Plaza, y su equipo, nuestro sueño se hizo realidad. Nos casamos en Deià, con
+                vistas al mar. Ella nos acompañó y apoyó en cada paso del camino. Desde encontrar una locación hasta
+                el
+                vestido de novia perfecto. Sentimos que estábamos en muy buenas manos y nuestros deseos e ideas se
+                tuvieron en cuenta a lo largo de la planificación. La ventaja de Alicia es que habla inglés fluido y
+                algo
+                de alemán, pero es de la isla. Esto hizo que la comunicación fuera muy fácil para nosotros y ella
+                todavía
+                tenía el conocimiento de los lugareños. Un millón de gracias por todo, Alicia, ¡sin duda te
+                recomendaremos!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="testimonials_2" class="section">
       <h2>testimonials_2</h2>
@@ -286,5 +331,21 @@
 </body>
 <script src="/static/js/menu.js"></script>
 <script src="/static/js/lang.js"></script>
+<script>
+  const carousel_card_1 = document.getElementById('carousel_card_1')
+  const carousel_card_2 = document.getElementById('carousel_card_2')
+
+  function goNextInCarousel() {
+    setTimeout(() => {
+      carousel_card_1.classList.toggle('testimonials_card_hide')
+      carousel_card_2.classList.toggle('testimonials_card_hide')
+      carousel_card_1.classList.toggle('testimonials_card_show')
+      carousel_card_2.classList.toggle('testimonials_card_show')
+      goNextInCarousel()
+    }, 10000)
+  }
+
+  goNextInCarousel()
+</script>
 
 </html>

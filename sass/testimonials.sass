@@ -29,9 +29,91 @@
       text-align: center
       width: 300px
 
+  &_carousel
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 50px 0 80px
+
+    &_wrapper
+      overflow: hidden
+      width: 100%
+      max-width: 400px
+      height: 650px
+      position: relative
+
+  &_card
+    display: flex
+    position: absolute
+    max-width: 400px
+    padding: 20px
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 30px
+
+    &_hide
+      // display: none
+
+      -webkit-animation-name: carousel_animation_out
+      animation-name: carousel_animation_out
+      -webkit-animation-duration: 2s
+      animation-duration: 2s
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
+
+    &_show
+      // display: flex
+
+      -webkit-animation-name: carousel_animation_in
+      animation-name: carousel_animation_in
+      -webkit-animation-duration: 2s
+      animation-duration: 2s
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
+
+    &_img
+      width: 100%
+      max-height: 200px
+
+    &_body
+      text-align: center
+
+      &_title
+        font-size: 2rem
+        font-family: $second_font
+        margin: 10px 0 20px
+
+      &_text
+        font-size: 1.4rem
+        text-align: center
+
 @media (min-width: $desktop)
   .testimonials
     &_hero_wrapper
       font-size: 3.5rem
       top: 33%
       left: 75%
+
+@keyframes carousel_animation_in
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0)
+
+  100%
+    opacity: 1
+    -webkit-transform: translateZ(0)
+    transform: translateZ(0)
+
+@keyframes carousel_animation_out
+  0%
+    opacity: 1
+    -webkit-transform: translateZ(0)
+    transform: translateZ(0)
+
+  100%
+    opacity: 0
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
