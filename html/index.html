@@ -9,7 +9,10 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+  <meta name="robots" content="index,follow" />
   <link rel="icon" type="image/png" href="/static/img/logo/logo.ico">
+  <title>VP Mallorca Weddings | Your wedding in Mallorca</title>
+
   <link rel="stylesheet" type="text/css" href="/static/css/index.css">
   <link rel="stylesheet" type="text/css" href="/static/css/select-country.css">
   <link rel="stylesheet" type="text/css" href="/static/css/menu.css">
@@ -20,7 +23,6 @@
   <link rel="stylesheet" type="text/css" href="/static/css/about.css">
   <link rel="stylesheet" type="text/css" href="/static/css/gallery.css">
   <link rel="stylesheet" type="text/css" href="/static/css/testimonials.css">
-  <title>VP Mallorca Weddings | Your wedding in Mallorca</title>
 </head>
 
 <body>
@@ -263,6 +265,7 @@
         <img loading="lazy" class="gallery_img" src="/static/img/gallery/pics/gallery_9.jpg" alt="Gallery 9">
         <img loading="lazy" class="gallery_img" src="/static/img/gallery/pics/gallery_10.jpg" alt="Gallery 10">
         <img loading="lazy" class="gallery_img" src="/static/img/gallery/pics/gallery_11.jpg" alt="Gallery 11">
+        <img loading="lazy" class="gallery_img" src="/static/img/gallery/pics/gallery_12.jpg" alt="Gallery 12">
       </div>
     </section>
     <section id="testimonials_hero" class="section testimonials_hero">
@@ -276,12 +279,12 @@
     </section>
     <section id="testimonials" class="section">
       <h2 class="section_title">Testimonials</h2>
+      <div class="testimonials_title_img_wrapper">
+        <img class="testimonials_title_img" src="/static/img/testimonials/bride.jpg" alt="Testimonials 2">
+      </div>
       <div class="testimonials_carousel">
         <div class="testimonials_carousel_wrapper">
-          <div id="carousel_card_1" class="testimonials_card testimonials_card_show">
-            <div class="testimonials_card_header">
-              <img class="testimonials_card_img" src="/static/img/testimonials/bride.jpg" alt="Testimonials 2">
-            </div>
+          <div class="testimonials_card">
             <div class="testimonials_card_body">
               <h4 class="testimonials_card_body_title">Una experiencia inolvidable</h4>
               <p class="testimonials_card_body_text">
@@ -296,10 +299,7 @@
               </p>
             </div>
           </div>
-          <div id="carousel_card_2" class="testimonials_card testimonials_card_hide">
-            <div class="testimonials_card_header">
-              <img class="testimonials_card_img" src="/static/img/testimonials/hands.jpg" alt="Testimonials 1">
-            </div>
+          <div class="testimonials_card">
             <div class="testimonials_card_body">
               <h4 class="testimonials_card_body_title">Mi boda soñada</h4>
               <p class="testimonials_card_body_text">
@@ -318,11 +318,53 @@
               </p>
             </div>
           </div>
+          <div class="testimonials_card">
+            <div class="testimonials_card_body">
+              <h4 class="testimonials_card_body_title">Servicio impecable</h4>
+              <p class="testimonials_card_body_text">
+                Muchas gracias a Alicia por ser la mejor!! Nos la recomendó una pareja amiga nuestra y merceció la pena.
+                Entendió desde el principio todo lo que quisimos, y lo mejoró x 1000. Muy buenas ideas que gustaron a
+                todo el mundo y sobretodo a nosotros. Disfrutamos muchísimo del proceso y quedó todo impolutamente
+                preparado para que el gran día no tuviéramos que preocuparnos por nada. Muchas muchas gracias!!
+              </p>
+            </div>
+          </div>
+          <div class="testimonials_card">
+            <div class="testimonials_card_body">
+              <h4 class="testimonials_card_body_title">No podemos estar más felices</h4>
+              <p class="testimonials_card_body_text">
+                Desde el primer contacto con esta empresa, el trato fue excepcional. El equipo de VP Mallorca Weddings
+                fue amable, profesional y siempre estuvo disponible para responder a nuestras preguntas y
+                preocupaciones. Durante el proceso de planificación, nos mantuvieron informados y actualizados en todo
+                momento.
+              </p>
+            </div>
+          </div>
+          <div class="testimonials_card">
+            <div class="testimonials_card_body">
+              <h4 class="testimonials_card_body_title">Encantados con el equipo y su trabajo</h4>
+              <p class="testimonials_card_body_text">
+                Hace unas semanas de nuestra boda y quería agradecer a todo el equipo por su trabajo y dedicación.
+                Todo salió perfecto y pudimos disfrutar al máximo al tener la tranquilidad de Alicia y su equipo el día
+                de la boda.
+                Durante todo el proceso nos aconsejaron muy bien y nos ayudaron a tomar las mejores decisiones para
+                nosotros. Sin ellos nos habríamos sentido algo perdidos.
+              </p>
+            </div>
+          </div>
+          <div class="testimonials_card">
+            <div class="testimonials_card_body">
+              <h4 class="testimonials_card_body_title">Muy agradecidos</h4>
+              <p class="testimonials_card_body_text">
+                Estamos muy agradecidos con todo el equipo de VP.
+                Nos asesoraron según nuestros gustos y bajo nuestro presupuesto y la boda fue fantástica. Un trato y
+                atencion de 10.
+                Fue la mejor decisión, gracias.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <section id="testimonials_2" class="section">
-      <h2>testimonials_2</h2>
     </section>
     <section id="contact" class="section">
       <h2>contact</h2>
@@ -331,21 +373,5 @@
 </body>
 <script src="/static/js/menu.js"></script>
 <script src="/static/js/lang.js"></script>
-<script>
-  const carousel_card_1 = document.getElementById('carousel_card_1')
-  const carousel_card_2 = document.getElementById('carousel_card_2')
-
-  function goNextInCarousel() {
-    setTimeout(() => {
-      carousel_card_1.classList.toggle('testimonials_card_hide')
-      carousel_card_2.classList.toggle('testimonials_card_hide')
-      carousel_card_1.classList.toggle('testimonials_card_show')
-      carousel_card_2.classList.toggle('testimonials_card_show')
-      goNextInCarousel()
-    }, 10000)
-  }
-
-  goNextInCarousel()
-</script>
 
 </html>
