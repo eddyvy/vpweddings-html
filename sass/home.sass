@@ -3,45 +3,55 @@
 .home
   display: flex
   flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 30px
 
   &_logo
-    min-height: 100vh
-    min-height: 100svh
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-
+    padding: 0 15px
     & img
-      width: 95vw
+      width: 100%
       max-width: 450px
 
   &_text
+    color: $mcolor1
     font-family: $main_font
-    font-size: 2rem
-    font-weight: 300
+    font-size: 3rem
+    max-width: 600px
     text-align: center
-    padding: 0 10px
+    font-weight: 300
 
   &_hero
-    min-height: 100vh
-    min-height: 100svh
-    width: auto
-    background-image: url('/static/img/home/hero_image.jpg')
+    background-image: url(/static/img/home/home_hero.jpg)
     background-repeat: no-repeat
-    background-size: auto 100%
-    background-position: center
+    background-size: cover
+    background-position-y: 40%
+    background-position-x: 50%
+
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+    &_text
+      display: inline-block
+      color: $lcolor1
+      font-size: 2.4rem
+      font-family: $second_font
+      text-align: center
+      padding: 10px
+      max-width: 800px
+
+    &_paragraph
+      color: $lcolor1
+      font-size: 1.8rem
+      text-align: center
+      padding: 10px
+      max-width: 600px
 
 @media (min-width: $desktop)
   .home
-    flex-direction: row-reverse
-
-    &_logo
-      flex: 0.37
-      padding: 0 10px
-
-      & img
-        width: 70%
-
-    &_hero
-      flex: 0.63
+    &_hero_text
+      font-size: 3rem
+      top: 40%
+      left: 50%
