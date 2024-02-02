@@ -1,0 +1,54 @@
+@import 'constants'
+
+.contact
+  background-color: $mcolor1
+  color: $lcolor1
+
+  &_title
+    font-size: 3.6rem
+    font-weight: 400
+    margin-bottom: 2rem
+    font-family: $second_font
+    padding-top: 50px
+    text-align: center
+
+  &_icon
+    width: 50px
+
+  &_details
+    margin-top: 100px
+    padding: 30px 20px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 30px
+
+    &_title
+      font-size: 2rem
+      font-family: $second_font
+      margin-bottom: 10px
+
+    &_link
+      font-size: 1.6rem
+
+    &_social
+      display: flex
+      align-items: center
+      gap: 20px
+
+@media (min-width: $desktop)
+  .contact
+    display: flex
+    align-items: center
+
+    &_title
+      flex: 1
+      padding-top: 0
+
+    &_details
+      margin-top: 0
+      flex: 1
+      flex-wrap: nowrap
+      flex-direction: column
+      justify-content: center
+      padding-left: 20%
