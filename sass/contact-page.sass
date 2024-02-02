@@ -1,0 +1,133 @@
+@import 'constants'
+
+.contactpage
+  background-color: $mcolor1
+  color: $lcolor1
+
+  &_wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+  &_title
+    font-size: 3.6rem
+    font-weight: 400
+    margin-bottom: 2rem
+    font-family: $second_font
+    padding-top: 50px
+    text-align: center
+    margin: 0
+
+  &_logo
+    text-align: center
+    &_img
+      width: 80%
+      max-width: 300px
+
+  &_form
+    margin: 10px
+    padding: 10px
+    background-color: $mcolor1
+    color: $lcolor1
+    max-width: 650px
+
+.form-row
+  display: flex
+  margin: 32px 0
+
+.input-data
+  width: 100%
+  height: 40px
+  margin: 0 20px
+  position: relative
+  background-color: $mcolor1
+
+.textarea
+  height: 150px
+
+.input-data input,
+.textarea textarea
+  display: block
+  width: 100%
+  height: 100%
+  border: none
+  font-size: 17px
+  border-bottom: 2px solid rgba(0,0,0, 0.12)
+  background-color: $mcolor1
+  color: $lcolor1
+
+  &:focus-visible, &:focus
+    outline-width: 0
+
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label
+  transform: translateY(-20px)
+  font-size: 14px
+  color: $lcolor1
+
+.textarea textarea
+  resize: none
+  padding-top: 10px
+
+.input-data label
+  position: absolute
+  pointer-events: none
+  bottom: 10px
+  font-size: 16px
+  transition: all 0.3s ease
+
+.textarea label
+  width: 100%
+  bottom: 40px
+  background: $lcolor1
+
+.input-data .underline
+  position: absolute
+  bottom: 0
+  height: 2px
+  width: 100%
+
+.input-data .underline:before
+  position: absolute
+  content: ""
+  height: 2px
+  width: 100%
+  background: $lcolor1
+  transform: scaleX(0)
+  transform-origin: center
+  transition: transform 0.3s ease
+
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before
+  transform: scale(1)
+
+.form-submit-btn
+  display: flex
+  justify-content: center
+
+  & button
+    background-color: $lcolor1
+    color: $mcolor1
+
+    &:hover
+      background: $lcolor1
+      color: $mcolor1
+
+    &:focus
+      border: 1px solid $lcolor1
+
+#message
+  background-color: $lcolor1
+  font-family: $main_font
+  color: $dcolor1
+  padding: 5px
+
+@media (min-width: $desktop)
+  .contactpage
+    &_wrapper
+      flex-direction: row
+      gap: 40px
+      padding-right: 10%

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Our team of Wedding Planners originally from Mallorca is specialized in designing, organizing
+  and coordinating unique and charming weddings on the island. Experts on Destination
+  Weddings, we are here to turn your dreams into reality, giving you a unique and personalized
+  experience in this paradisiacal corner of the Mediterranean.">
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" type="image/png" href="/static/img/logo/logo.ico">
+  <title>VP Mallorca Weddings | Contact us</title>
+
+  <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/select-country.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/menu.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/contact-page.css">
+</head>
+
+<body>
+  <nav class="menu_container">
+    <sidebar id="menu_close" class="animate__animated animate__fadeInRight menu menu_close menu_show">
+      <button id="menu_icon_btn_open" class="menu_icon_btn">
+        <img id="menu_icon_open" src="/static/icon/menu.svg" alt="Menu Icon">
+      </button>
+    </sidebar>
+    <sidebar id="menu_open" class="animate__animated animate__fadeInRight menu">
+      <button id="menu_icon_btn_close" class="menu_icon_btn">
+        <img id="menu_icon_close" src="/static/icon/close.svg" alt="Menu Icon">
+      </button>
+      <div id="menu_links" class="menu_links">
+        <a href="/">Home</a>
+        <a href="/#services">Services</a>
+        <a href="/#locations">Locations</a>
+        <a href="/#decoration">Decoration</a>
+        <a href="/#about">About us</a>
+        <a href="/#gallery">Gallery</a>
+        <a href="/#testimonials">Testimonials</a>
+        <a href="/contact">Contact</a>
+        <div class="menu_links_lang">
+          <div class="select-box">
+            <div class="select-box__current" tabindex="1">
+              <div class="select-box__value">
+                <input class="select-box__input" type="radio" id="en" value="en" name="lang" />
+                <p class="select-box__input-text">
+                  <img class="select-img" src="/static/icon/gb.svg" alt="English" />
+                </p>
+              </div>
+              <div class="select-box__value">
+                <input class="select-box__input" type="radio" id="es" value="es" name="lang" />
+                <p class="select-box__input-text">
+                  <img class="select-img" src="/static/icon/es.svg" alt="Spanish" />
+                </p>
+              </div>
+              <div class="select-box__value">
+                <input class="select-box__input" type="radio" id="de" value="de" name="lang" />
+                <p class="select-box__input-text">
+                  <img class="select-img" src="/static/icon/de.svg" alt="German" />
+                </p>
+              </div>
+              <img class="select-box__icon" src="/static/icon/chevron_down.svg" alt="Arrow Icon" aria-hidden="true" />
+            </div>
+            <ul class="select-box__list">
+              <li>
+                <label class="select-box__option" for="en" aria-hidden="aria-hidden">
+                  <img class="select-img" src="/static/icon/gb.svg" alt="English" />
+                </label>
+              </li>
+              <li>
+                <label class="select-box__option" for="es" aria-hidden="aria-hidden">
+                  <img class="select-img" src="/static/icon/es.svg" alt="Spanish" />
+                </label>
+              </li>
+              <li>
+                <label class="select-box__option" for="de" aria-hidden="aria-hidden">
+                  <img class="select-img" src="/static/icon/de.svg" alt="German" />
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </sidebar>
+  </nav>
+  <main>
+    <section class="section contactpage">
+      <h1 class="contactpage_title">Contact us</h1>
+      <div class="contactpage_wrapper">
+        <form class="contactpage_form" action="https://formsubmit.co/a30749f33496a6bb14c1750cf9b5591e" method="POST"
+          target="_blank" onSubmit={handleSubmit}>
+          <div class="form-row">
+            <div class="input-data">
+              <input id="firstname" name="firstname" type="text" required>
+              <div class="underline"></div>
+              <label for="firstname">Your name</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+              <input id="phone" name="phone" type="tel" required>
+              <div class="underline"></div>
+              <label for="phone">Your phone number</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+              <input id="email" name="email" type="email" required>
+              <div class="underline"></div>
+              <label for="email">Your e-mail address</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data textarea">
+              <textarea id="message" name="message" rows="8" cols="80" required
+                placeholder="Write your message"></textarea>
+              <br />
+              <div class="message"></div>
+              <br />
+            </div>
+          </div>
+          <div class="form-submit-btn">
+            <button class="button">submit</button>
+          </div>
+        </form>
+        <div class="contactpage_logo">
+          <img class="contactpage_logo_img" src="/static/img/logo/logo_footer.png" alt="VP Mallorca Weddings Logo">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="/static/js/menu.js"></script>
+<script src="/static/js/lang.js"></script>
+
+</html>
