@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "vp-eu",
+          "region": "europe-west1"
+        }
+      }
+    ]
+  }
+}
