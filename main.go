@@ -43,7 +43,7 @@ func main() {
 	filesDir := http.Dir(filepath.Join(workDir, "static"))
 	fileServer(r, "/static", filesDir)
 
-	port := 80
+	port := 8080
 	serverAddr := fmt.Sprintf("0.0.0.0:%d", port)
 
 	fmt.Printf("Server is running on port: %d", port)
