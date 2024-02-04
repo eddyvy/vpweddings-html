@@ -33,14 +33,10 @@
     gap: 50px
 
   &_img
-    min-width: 160px
-    min-height: 240px
-
-    & img
-      object-fit: cover
-      object-position: center
-      width: 100%
-      height: 100%
+    object-fit: cover
+    object-position: center
+    max-width: 100%
+    height: 100%
 
 @media (min-width: $desktop)
   .gallery
@@ -52,6 +48,3 @@
     &_images
       width: 70vw
       grid-template-columns: 1fr 1fr
-
-    &_img
-      min-height: 500px
