@@ -19,10 +19,18 @@
     width: 95%
     max-width: 450px
 
-  &_text p
-    margin: 20px 0
-    max-width: 450px
-    font-size: 1.4rem
+  &_text
+    & p
+      margin: 20px 0
+      max-width: 450px
+
+    &_nor
+      font-size: 1.4rem
+
+    &_esp
+      font-family: $second_font
+      font-size: 1.8rem
+      font-weight: 300
 
   &_fav
     &_wrapper
@@ -31,8 +39,10 @@
       padding: 0 30px
 
     &_img
-      width: 100%
       max-width: 400px
+
+      & img
+        width: 100%
 
     &_grid
       display: grid
@@ -50,9 +60,10 @@
 
     &_fav
       &_img
-        width: 100%
-        height: 100%
-        object-fit: cover
+        & img
+          width: 100%
+          height: 100%
+          object-fit: cover
 
       &_grid
         grid-template-areas: "a a a b b b c c c" ".d d d .e e e ." "f f f g g g h h h" ".i i i .j j j ."
