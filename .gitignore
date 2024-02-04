@@ -1,3 +1,5 @@
 tmp
 *.exe
 main
+.firebase
+.firebaserc
